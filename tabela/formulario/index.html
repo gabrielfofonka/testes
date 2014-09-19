@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formuário HTML/CSS</title>
+</head>
+<body>
+    <div class="wrap-content">
+        <form method="post" action="#">
+            <h2>Incrição</h2>
+            <div class="dados_pessoais">
+                <h3>Responsável<h3>
+                <div class="col2">
+                    <label for="nome">Nome<span>*</span><small>completo do responsável</small></label>
+                    <input name="name" type="text" required="requerid" id="nome"/>
+
+
+                    <label for="funcao">Função<small>Proprietário, Marketing, Vendas, Etc.</small></label>
+                    <input type="text" name="function" id="funcao"/>
+                </div>
+            </div>
+
+            <div class="empresa">
+                <h3>Empresa</h3>
+                <div class="col3">
+                    <label for="empresa">Empresa<span>*</span><small>Estabelecimento</small></label>
+                    <input type="text" name="empresa" id="empresa" required="requerid"/>
+
+
+                <label for="cnpj">CNPJ<small>CPF</small></label>
+                <input type="text" name="cnpj" id="cnpj">
+
+
+                <label for="area-atuacao">Área de Atuação<small>Mecânica, Mercado, Loja</small></label>
+                <input type="text" name="area-atuacao" id="area-atuacao"/>
+                </div>
+
+            </div>
+
+            <div class="contato">
+                <h3>Contatos</h3>
+                <div class="col6">
+                    <label for="email">Email<span>*</span><small>email válido</small></label>
+                    <input type="text" name="email" required="requerid" id="email"/>
+
+                    <label for="telefone">Telefone<span>*</span><small>(99)9999-9999</small></label>
+                    <input type="text" name="telefone" required="required" id="telefone"/>
+
+
+                    <label>
+                        <h4>Celular</h4>
+                        <p><em>(99)9999-9999</em></p>
+                        <input type="text" name="celular"/>
+                    </label>
+
+                    <label>
+                        <h4>Website</h4>
+                        <p><em>www.seusite.com.br</em></p>
+                        <input type="text" name="website"/>
+                    </label>
+
+                    <label>
+                        <h4>Fan Page</h4>
+                        <p><em>facebook.com/suapagina</em></p>
+                        <input type="text" name="fan-page"/>
+                    </label>
+
+                    <label>
+                        <h4>Twitter</h4>
+                        <p><em>@seunick</em></p>
+                        <input type="text" name="twitter"/>
+                    </label>
+                </div>
+            </div>
+
+            <div class="endereco">
+                <label>
+                    <h3>Endereço</h3>
+                    <h4>Cidade</h4>
+                    <input type="text" name="cidade"/>
+                </label>
+
+                <label>
+                    <h4>Bairro</h4>
+                    <input type="text" name="bairro"/>
+                </label>
+
+                <label>
+                    <h4>Endereço</h4>
+                    <input type="text" name="endereco"/>
+                </label>
+
+                <label>
+                    <h4>Número</h4>
+                    <input type="text" name="numero"/>
+                </label>
+
+            </div>
+
+            <div class="imagens">
+                <label>
+                    <h3>Imagens</h3>
+                    <h4>Material de Divulgação</h4>
+                    <p><em>Logo, Cartão de Visita, Folder, etc</em></p>
+                    <input type="submit" value="Enviar"/>
+                </label>
+            </div>
+
+            <div class="mensagem">
+                <label>
+                    <h3>Mensagem</h3>
+                    <h4>Mensagem</h4>
+                    <textarea rows="5" cols="40" maxlength="300"></textarea>
+                </label>
+
+                <labe>
+                    <h4>Como Conheceu o Zip Acha?</h4>
+                    <input type="radio" name="visita" value="Visita"/>Visita
+                    <input type="radio" name="google" value="google"/>Google
+                    <input type="radio" name="outro" value="outro"/>Outro
+                    <input type="radio" name="indicacao" value="indicacao"/>Indicação
+                    <input type="radio" name="facebook" value="facebok"/>Facebook
+                </labe>
+            </div>
+    </div>
+    </form>
+</body>
+</html>
